@@ -1,0 +1,2 @@
+# Java_DB_appointment_application
+This was an application that was created to connect to a private database and store user information and allow you to edit it and generate reports from the system. It was very extensive and even had advanced error checking to make sure that bad data would not be created. It is here only to view as it will not run because I have hidden the database information for security reasons.
