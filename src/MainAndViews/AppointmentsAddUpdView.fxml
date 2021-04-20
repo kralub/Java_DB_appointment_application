@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainAndViews.AppointmentsAddUpdViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="66.0" layoutX="11.0" layoutY="319.0" stroke="BLACK" strokeType="INSIDE" width="584.0" />
+      <Text fx:id="addUpdApptTitle" layoutX="71.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add/Upd Appt." textAlignment="CENTER" wrappingWidth="455.887939453125">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <Text fx:id="apptIDText" layoutX="185.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appt. ID: theID" textAlignment="CENTER" wrappingWidth="225.27862548828125" />
+      <Text layoutX="78.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" wrappingWidth="121.03884887695312">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="contactComboBox" layoutX="335.0" layoutY="137.0" prefWidth="150.0" />
+      <Text layoutX="78.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cust. ID" wrappingWidth="121.03884887695312">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User_ID" wrappingWidth="121.03884887695312">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="76.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="121.03884887695312">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="79.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc." wrappingWidth="121.03884887695312">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="76.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="121.03884887695312">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="77.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start" wrappingWidth="121.03884887695312">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="76.0" layoutY="674.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Time" wrappingWidth="121.03884887695312">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="customerIDComboBox" layoutX="335.0" layoutY="182.0" prefWidth="150.0" />
+      <ComboBox fx:id="userIDComboBox" layoutX="334.0" layoutY="231.0" prefWidth="150.0" />
+      <TextField fx:id="titleTextField" layoutX="331.0" layoutY="280.0" />
+      <TextField fx:id="descriptionTextField" layoutX="331.0" layoutY="390.0" prefHeight="79.0" prefWidth="161.0" promptText="50 Chars Minimum" />
+      <TextField fx:id="locationTextField" layoutX="331.0" layoutY="477.0" />
+      <Text layoutX="77.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="121.03884887695312">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="datePicker" layoutX="332.0" layoutY="522.0" />
+      <ComboBox fx:id="startComboBox" layoutX="333.0" layoutY="610.0" prefWidth="150.0" promptText="Select a time..." />
+      <ComboBox fx:id="endComboBox" layoutX="333.0" layoutY="654.0" prefWidth="150.0" promptText="Select a time..." />
+      <Button fx:id="backButton" layoutX="16.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+      <Text layoutX="76.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="121.03884887695312">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="typeTextField" layoutX="330.0" layoutY="352.0" />
+      <Button fx:id="submitButton" layoutX="266.0" layoutY="721.0" mnemonicParsing="false" onAction="#handleSubmitButton" text="SUBMIT" />
+      <Text layoutX="159.0" layoutY="565.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is in your time zone and must match our business hours from 8:00 a.m. to 10:00 p.m. EST." textAlignment="CENTER" wrappingWidth="276.21630859375" />
+      <Line endX="100.0" layoutX="300.0" layoutY="591.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="297.0" layoutY="120.0" startX="-100.0" strokeWidth="3.0" />
+      <Text layoutX="16.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(to get report you must capitalize and type &quot;Board Meeting&quot;, &quot;Sales Meeting&quot;, &quot;Follow Up&quot;, or &quot;Customer Meetup&quot;)" wrappingWidth="583.8798828125">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

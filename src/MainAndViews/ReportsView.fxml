@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="902.0" prefWidth="1159.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainAndViews.ReportsViewController">
+   <children>
+      <Text layoutX="479.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPORTS">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Text>
+      <Line endX="264.0" layoutX="567.0" layoutY="84.0" startX="-244.0" strokeLineCap="ROUND" strokeWidth="4.0" />
+      <TableView fx:id="typesByMonthTable" layoutX="101.0" layoutY="138.0" prefHeight="195.0" prefWidth="978.0">
+        <columns>
+          <TableColumn fx:id="monthColumn" prefWidth="107.39214324951172" text="Month" />
+          <TableColumn fx:id="boardMeetingsColumn" prefWidth="198.89218139648438" text="Board meetings" />
+            <TableColumn fx:id="salesMeetingsColumn" prefWidth="213.60781860351562" text="Sales meetings" />
+            <TableColumn fx:id="customerMeetupsColumn" prefWidth="237.58697509765625" text="Customer meetups" />
+            <TableColumn fx:id="followUpColumn" prefWidth="219.533203125" text="Follow up" />
+        </columns>
+      </TableView>
+      <TableView fx:id="contactsInfoTable" layoutX="345.0" layoutY="665.0" prefHeight="195.0" prefWidth="478.0">
+         <columns>
+            <TableColumn fx:id="contactsInfoIDColumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="contactsInfoNameColumn" prefWidth="227.66159057617188" text="Name" />
+            <TableColumn fx:id="contactsInfoEmailColumn" prefWidth="174.33834838867188" text="Email" />
+         </columns>
+      </TableView>
+      <Text layoutX="401.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Types by month totals" textAlignment="CENTER" wrappingWidth="353.21630859375">
+         <font>
+            <Font size="25.0" />
+         </font></Text>
+      <Text layoutX="401.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Schedule Table" textAlignment="CENTER" wrappingWidth="353.21630859375">
+         <font>
+            <Font size="25.0" />
+         </font></Text>
+      <Text layoutX="403.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Contacts and their info" textAlignment="CENTER" wrappingWidth="353.21630859375">
+         <font>
+            <Font size="25.0" />
+         </font></Text>
+      <TableView fx:id="apptTable" layoutX="19.0" layoutY="414.0" prefHeight="195.0" prefWidth="1117.0">
+         <columns>
+            <TableColumn fx:id="contactColumn" prefWidth="111.927734375" text="Contact" />
+            <TableColumn fx:id="apptIDColumn" prefWidth="70.691650390625" text="Appt. ID" />
+            <TableColumn fx:id="titleColumn" prefWidth="119.44307708740234" text="Title" />
+            <TableColumn fx:id="descColumn" prefWidth="310.5569305419922" text="Desc." />
+            <TableColumn fx:id="locationColumn" prefWidth="87.42767333984375" text="Location" />
+            <TableColumn fx:id="typeColumn" prefWidth="114.6439208984375" text="Type" />
+            <TableColumn fx:id="startTimeColumn" prefWidth="106.07171630859375" text="Start time" />
+            <TableColumn fx:id="endTimeColumn" prefWidth="109.92828369140625" text="End time" />
+            <TableColumn fx:id="customerIDColumn" prefWidth="85.805419921875" text="Cust. ID" />
+         </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="21.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+   </children>
+</AnchorPane>

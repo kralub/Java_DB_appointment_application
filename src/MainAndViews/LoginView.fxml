@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainAndViews.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="23.0" layoutX="154.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="98.0" />
+      <Text id="welcomeText" fx:id="welcomeText" layoutX="91.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" textAlignment="CENTER" wrappingWidth="339.21630859375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text id="yourZoneIdText" fx:id="yourZoneIdText" layoutX="23.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your zone id:" wrappingWidth="129.0106201171875">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text id="zoneIdtext" fx:id="zoneIdText" layoutX="156.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zone ID" wrappingWidth="96.70094299316406">
+         <font>
+            <Font size="9.0" />
+         </font></Text>
+      <Text id="usernameText" fx:id="usernameText" layoutX="158.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username: " wrappingWidth="83.21630859375" />
+      <Text id="passwordText" fx:id="passwordText" layoutX="158.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password: " wrappingWidth="83.21630859375" />
+      <TextField id="usernameTextField" fx:id="usernameTextField" layoutX="284.0" layoutY="131.0" prefHeight="27.0" prefWidth="126.0" />
+      <TextField id="passwordTextField" fx:id="passwordTextField" layoutX="284.0" layoutY="186.0" prefHeight="27.0" prefWidth="126.0" />
+      <Button id="enterButton" fx:id="enterButton" layoutX="180.0" layoutY="234.0" mnemonicParsing="false" onAction="#handleEnterButton" prefHeight="28.0" prefWidth="161.0" text="Enter " />
+      <Text id="yourZoneIdText" fx:id="hostText" layoutX="272.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Host Not Connected" textAlignment="CENTER" wrappingWidth="117.47313992291947">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="locationText" layoutX="195.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOCATION" textAlignment="CENTER" wrappingWidth="119.942138671875" />
+   </children>
+</AnchorPane>
